@@ -6,7 +6,7 @@ const TinyURLShortener = () => {
   const [copied,setCopied]=useState(false);
 
   const shortenUrl = async () => {
-    const API_KEY = import.meta.env.VITE_TINYURL_API_KEY ||"9NcI5dUL8bnhDlBEXp0PsdIYx0JV7ZlfTqj1NwJAt0dbe0W99vis9UGNsoql"; 
+    const API_KEY = import.meta.env.VITE_TINYURL_API_KEY; 
     // Replace with your actual TinyURL API key
     const API_URL = import.meta.env.VITE_TINYURL_API_URL||"https://api.tinyurl.com/create";
 
